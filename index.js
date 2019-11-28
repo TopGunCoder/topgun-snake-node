@@ -41,7 +41,7 @@ app.post('/move', (request, response) => {
   const data = {
     move: 'up', // one of: ['up','down','left','right']
   }
-
+  console.log(`MOVE: ${JSON.stringify(request.data)}`);
   return response.json(data)
 })
 
